@@ -24,4 +24,4 @@ DavidAU's Turbo Brilliance `{REASON:xxx}` persona/mode tags are extracted by the
 
 - `TAG_RE = /\{REASON:[^}]*\}/` — user-typed tags are stripped from message content; the injected tag is the only one that reaches the model.
 - Injection targets the **last** message with `role === "user"`; if the payload's last user message is already the system prompt-adjacent edge case, injection appends after existing content with a leading newline.
-- Two extensions with the same exported identity are deduped by pi (loose-file + package install won't double-inject).
+- If installed as a loose file (`~/.pi/agent/extensions/`) **and** as a package, the extension loads twice — remove the loose file when installing the package.
