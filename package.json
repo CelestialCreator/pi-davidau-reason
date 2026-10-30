@@ -1,0 +1,51 @@
+{
+  "name": "pi-davidau-reason",
+  "version": "0.1.0",
+  "description": "DavidAU Qwen3.8 Turbo Brilliance {REASON:xxx} mode/persona tags for pi — reliable injection into the latest user message, /davidau-mode command with combos, presets and autocomplete",
+  "type": "module",
+  "license": "MIT",
+  "author": "CelestialCreator <akshay@zosma.ai>",
+  "keywords": [
+    "pi",
+    "pi-package",
+    "pi-extension",
+    "pi-coding-agent",
+    "davidau",
+    "reason-tag",
+    "persona",
+    "llama.cpp",
+    "llama-swap",
+    "qwen",
+    "turbo-brilliance",
+    "reasoning-mode"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/davidau-reason-tag.ts"
+    ]
+  },
+  "files": [
+    "extensions/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.4.0",
+    "typescript": "^5.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CelestialCreator/pi-davidau-reason.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CelestialCreator/pi-davidau-reason/issues"
+  },
+  "homepage": "https://github.com/CelestialCreator/pi-davidau-reason#readme"
+}
